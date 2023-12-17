@@ -1,5 +1,150 @@
 <main>
     {{>navigation}}
     {{! Header Section }}
-    <div>Hello</div>
+    <div class="min-w-full flex flex-col items-center overflow-hidden py-16 sm:py-20 h-auto">
+        <div class="lg:container mx-4 lg:mx-auto max-w-auto lg:max-w-[70%] text-gray-200">
+            <div class="mx-2 lg:mx-0 md:mt-16 px-8 py-16 lg:px-16 lg:py-24 bg-violet-900 rounded-lg">
+                <div class="mx-auto max-w-auto lg:mx-0">
+                    <h2 class="mb-12 text-4xl font-main-bold sm:text-6xl">Justin Dong</h2>
+                    <h3 id="typewriter" class="my-8 lg:my-12 text-xl font-main-semi sm:text-4xl">Full Stack Web
+                        Developer</h3>
+                </div>
+            </div>
+
+            {{!About Me section}}
+            <div id="about-me" class="py-4">
+                <div class="mx-2 mb-32 md:mb-48 lg:mx-0 px-8 py-16 lg:px-16 lg:py-24 rounded-lg bg-gray-800">
+                    <h3 class="font-main-semi text-3xl sm:text-5xl">About Me</h3>
+                    <p class="mt-8 font-main-normal text-xl sm:text-2xl leading-10">I am a full stack web developer from
+                        Corbin, Kentucky with a certificate in Full Stack Web Development from Vanderbilt University's
+                        Web Development Bootcamp. I am passionate about turning ideas into beautiful applications that
+                        look great and offer advanced solutions to real world problems. I prioritize active learning and
+                        believe that web development offers endless opportunities for improvement. By practicing this
+                        mindset, I have been successfully crafting and maintaining my skills in responsive full stack
+                        web design.</p>
+                </div>
+            </div>
+            {{!Projects section}}
+            <div id="recent-projects"
+                class="mx-2 mb-32 md:mb-48 lg:mx-0 px-8 py-16 lg:px-16 lg:py-24 rounded-lg bg-gray-800">
+                <h3 class="font-main-semi text-2xl sm:text-5xl mb-16 text-gray-200">Recent Projects</h3>
+                <div class="grid grid-flow-row grid-cols-6 gap-8">
+                    {{!-- astronoME --}}
+                    <div
+                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
+                        <img class="w-full object-cover object-top h-64" src="/images/astronome-screenshot.png"
+                            alt="AstronoME">
+                        <div class="px-6 py-4 flex flex-col items-center text-center">
+                            <h4 class="font-main-bold text-xl mb-2">AstronoME</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                href="/projects/0">Case
+                                Study <span aria-hidden="true">&rarr;</span></a>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                target="_blank" href="https://github.com/cdgonzo23/astronoME">GitHub Repository <span
+                                    aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    {{!-- Swoldemort --}}
+                    <div
+                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
+                        <img class="w-full object-cover object-top h-64" src="/images/swoledemort-screenshot.png"
+                            alt="Swoldemort Fitness">
+                        <div class="px-6 py-4 flex flex-col items-center text-center">
+                            <h4 class="font-main-bold text-xl mb-2">Swoldemort Fitness</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                href="/projects/1">Case
+                                Study <span aria-hidden="true">&rarr;</span></a>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                target="_blank" href="https://github.com/dong135790/swoldemort">GitHub Repository <span
+                                    aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    {{!-- Weather Forecast --}}
+                    <div
+                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
+                        <img class="w-full object-cover object-top max-h-64"
+                            src="/images/weather-forecast-dashboard.png" alt="Weather Forecast">
+                        <div class="px-6 py-4 flex flex-col items-center text-center">
+                            <h4 class="font-main-bold text-xl mb-2">Weather Forecast</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                href="/projects/2">Case
+                                Study <span aria-hidden="true">&rarr;</span></a>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                target="_blank" href="https://github.com/dong135790/weather-forecast-dashboard">GitHub
+                                Repository <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    {{!-- E-Commerce Backend --}}
+                    <div
+                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
+                        <img class="w-full object-cover object-top max-h-64"
+                            src="/images/e-commerce-backend-screenshot.png" alt="E-commerce Backend">
+                        <div class="px-6 py-4 flex flex-col items-center text-center">
+                            <h4 class="font-main-bold text-xl mb-2">E-Commerce Backend</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                href="/projects/3">Case
+                                Study <span aria-hidden="true">&rarr;</span></a>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                target="_blank" href="https://github.com/dong135790/e-Commerce-back-end">GitHub
+                                Repository <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    {{!-- Readme generator--}}
+                    <div
+                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
+                        <img class="w-full object-cover object-top h-64" src="/images/readme-generator-screenshot.png"
+                            alt="README.md Generator">
+                        <div class="px-6 py-4 flex flex-col items-center text-center">
+                            <h4 class="font-main-bold text-xl mb-2">README.md Generator</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                href="/projects/5">Case
+                                Study <span aria-hidden="true">&rarr;</span></a>
+                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                                target="_blank" href="https://github.com/dong135790/readme-generator">GitHub Repository
+                                <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!Skills section}}
+        </div>
+        <div id="skills" class="flex flex-col min-w-full mb-32 md:mb-48 text-gray-800">
+            <div class="inline-flex items-center justify-center w-full pb-24">
+                <hr class="h-1 my-8 bg-gray-800 border-0 w-full">
+                <span
+                    class="absolute px-4 font-main-semi text-3xl sm:text-5xl bg-gray-200 -translate-x-1/2 left-1/2">Skills</span>
+            </div>
+            <div class="font-main-normal text-xl grid row-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/js.png"
+                        class="h-16 w-16 align-center mb-2">JavaScript</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/html-5.png"
+                        class="h-16 w-16 align-center mb-2">HTML5</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/css.png"
+                        class="h-16 w-16 align-center mb-2">CSS3</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/nodejs.png"
+                        class="h-16 w-16 align-center mb-2">Node.js</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/express.png"
+                        class="h-16 w-16 align-center mb-2">Express.js</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/react.png"
+                        class="h-16 w-16 align-center mb-2">React</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/api.png"
+                        class="h-16 w-16 align-center mb-2">REST APIs</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/mysql.png"
+                        class="h-16 w-16 align-center mb-2">MySQL</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/mongodb.png"
+                        class="h-16 w-16 align-center mb-2">MongoDB</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/graphql.png"
+                        class="h-16 w-16 align-center mb-2">GraphQL</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/bootstrap.png"
+                        class="h-16 w-16 align-center mb-2">Bootstrap</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/tailwind.png"
+                        class="h-16 w-16 align-center mb-2">Tailwind CSS</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/github-mark.png"
+                        class="h-16 w-16 align-center mb-2">GitHub</div>
+                <div class="text-center flex flex-col items-center mb-4"><img src="../images/icons/visualstudio.png"
+                        class="h-16 w-16 align-center mb-2">Visual Studio Code</div>
+            </div>
+        </div>
+    </div>
+    {{!Contact Me Section}}
 </main>

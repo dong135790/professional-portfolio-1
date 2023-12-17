@@ -1,0 +1,42 @@
+  <main class="flex flex-col justify-evenly self-center">
+    {{!-- make different nav for case studies --}}
+    {{>navigation}}
+    <div class="min-w-full flex flex-col items-center overflow-hidden py-16 sm:py-20 h-auto">
+      <div class="lg:container mx-4 lg:mx-auto max-w-auto lg:max-w-[70%] text-gray-200">
+        <div class="mx-2 lg:mx-0 px-8 py-16 lg:px-16 lg:py-24 bg-gray-800 rounded-lg mb-16">
+          <div class="mx-auto max-w-auto lg:mx-0 flex flex-col items-center md:flex-row md:justify-between md:items-center">
+            <div class="flex flex-col items-start">
+              <h2 class="mb-12 text-4xl font-main-bold sm:text-6xl">{{name}}</h2>
+              <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200" target="_blank" href="{{github}}">GitHub Repository <span aria-hidden="true">&rarr;</span></a>
+              {{#if url}}
+              <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200" target="_blank" href="{{url}}">Visit the App <span aria-hidden="true">&rarr;</span></a>
+              {{/if}}
+            </div>
+            <img src="{{image}}" class="rounded aspect-square m-8 h-64 lg:h-80 object-cover object-top">
+          </div>
+        </div>
+        <div class="flex flex-col min-w-full my-32 px-8 py-4 lg:px-16 lg:py-8 border-l-4 border-gray-800 text-gray-800">
+            <h3 class="font-main-semi text-2xl sm:text-5xl">About the Project</h3>
+            <p class="my-8 font-main-normal text-xl sm:text-2xl leading-10">{{description}}</p>
+        </div>
+        <div class="flex flex-col min-w-full my-32 px-8 py-4 lg:px-16 lg:py-8 border-l-4 border-gray-800 text-gray-800">
+          <h3 class="font-main-semi text-2xl sm:text-5xl">Methods</h3>
+          <p class="my-8 font-main-normal text-xl sm:text-2xl leading-10">{{methods}}</p>
+        </div>
+        <div id="skills" class="flex flex-col min-w-full my-32 text-gray-800">
+          <div class="inline-flex items-center justify-center w-full pb-24">
+            <hr class="h-1 my-8 bg-gray-800 border-0 w-full">
+            <span class="absolute px-4 font-main-semi text-2xl sm:text-5xl bg-gray-200 -translate-x-1/2 left-1/2">Skills</span>
+          </div>
+          <div class="font-main-bold text-xl flex flex-col items-center">
+            <ul class="grid grid-rows-auto grid-cols-2 md:grid-cols-3 gap-4 text-center">
+            {{#each skills as |skill| }}
+              <li class="m-4">{{skill}}</li>
+            {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>

@@ -1,0 +1,57 @@
+{
+    "projects": [
+        {
+            "name": "AstronoMe",
+            "description": "",
+            "skills": [
+                "", ""
+            ],
+            "methods": "",
+            "github": "https://github.com/cdgonzo23/astronoME",
+            "url": "https://astronome-10022023-9058067b996b.herokuapp.com/",
+            "image": "/images/astronome-screenshot.png"
+        },
+        {
+            "name": "SwoledeMort",
+            "description": "",
+            "skills": [
+                "", ""
+            ],
+            "methods": "",
+            "github": "https://github.com/dong135790/swoldemort",
+            "url": "https://application-2023-07-31-69c69ce85b50.herokuapp.com/",
+            "image": "/images/swoledemort-screenshot.png"
+        },
+        {
+            "name": "Weather Forecast",
+            "description": "",
+            "skills": [
+                "", ""
+            ],
+            "methods": "",
+            "github": "https://github.com/dong135790/weather-forecast-dashboard",
+            "url": "https://dong135790.github.io/weather-forecast-dashboard/",
+            "image": "/images/weather-forecast-dashboard.png"
+        },
+        {
+            "name": "E-Commerce Backend",
+            "description": "",
+            "skills": [
+                "", ""
+            ],
+            "methods": "",
+            "github": "https://github.com/dong135790/e-Commerce-back-end",
+            "image": "/images/e-commerce-backend-screenshot.png"
+        },
+        {
+            "name": "Professional README.md Generator",
+            "description": "",
+            "skills": [
+                "", ""
+            ],
+            "methods": "",
+            "github": "https://github.com/dong135790/readme-generator",
+            "image": "/images/readme-generator-screenshot.png"
+        }
+    ]
+}

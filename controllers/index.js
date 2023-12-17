@@ -20,7 +20,7 @@ router.get('/projects/:index', (req, res) => {
       const url = parsedData.projects[req.params.index].url;
       const image = parsedData.projects[req.params.index].image;
 
-      res.render('case-study', {name, description, skills, methods, github, url, image});
+      res.render('projects', {name, description, skills, methods, github, url, image});
     }
   });
 })
