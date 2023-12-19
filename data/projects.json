@@ -2,54 +2,48 @@
     "projects": [
         {
             "name": "AstronoMe",
-            "description": "",
-            "skills": [
-                "", ""
+            "description": "AstronoME is a platform for astronomy and stargazing lovers to connect with one another as well as find current and accurate information regarding local weather, lunar phase, and upcoming astronomical events. Once a user creates an account, the user is able to view AstronoME's \"Community\", where users are able to create blog posts, as well as upload images, to share their favorite stargazing locations, fun facts, ask questions, or leave comments on others' posts. Furthermore, AstronoME's homepage allows the users to view weather information for the location specified in their profile. This location, as well as any other profile information, can be edited at any time by visiting your profile tab in the upper right hand corner of the application. This application, which utilizes the MERN stack as well as GraphQL, allows authenticated users to easily add or remove data from the AstronoME database. This, along with the implementation of trustworthy open API's, ensures that the AstronoME community remains informed and connected.",
+            "skills":[
+                "Collaborative Work", "Version Control", "Responsive Design", "React", "MERN Stack", "GraphQL", "Apollo", "NoSQL", "MongoDB", "jsonwebtoken", "Tailwind CSS", "Heroku", "Express.js", "Node.js", "JavaScript"
             ],
-            "methods": "",
+            "methods": "A group of four collaborators and myself created AstronoME utilizing the MERN Stack, GraphQL, Tailwind CSS, and Heroku. NoSQL and MongoDB were utilized to create and store the database, while GraphQL and Apollo Server/Client was implemented to query data from the AstronoME database. We used jsonwebtoken to authenticate user credentials upon creating an account, logging in, or editing information within a user's account. This authentication allows access to AstronoME's full capabilities and resources. AstronoME utilizes multiple third-party open APIs: NASA APIs, OpenWeatherMap APIs, and Cloudinary API. Fetches are made to these APIs to retrieve data, such as weather information, photographs, upcoming astronomical events, as well as allowing users to upload images. This application is deployed through Heroku. The project is styled with Tailwind CSS and also utlizes the PostCSS plugin, Autoprefixer to parse and add vendor prefixers. My main duties throughout this project included implementing a comprehensive style to all pages, elements, and components within AstronoME in order to achieve a seamless aesthetic and appealing UI. In addition to this, I contributed to the construction of the MongoDB database regarding User profiles as well as defining queries and information within the GraphQL typedefs and resolvers. My work within the database and queries prioritized ensuring that sufficient data persisted across all queries so that the correct, consistent information was rendered on all pages of the application.",
             "github": "https://github.com/cdgonzo23/astronoME",
             "url": "https://astronome-10022023-9058067b996b.herokuapp.com/",
             "image": "/images/astronome-screenshot.png"
         },
         {
             "name": "SwoledeMort",
-            "description": "",
+            "description": "Organizing and keeping track of your fitness exercises/routine can be difficult and tedious. To address this problem, a group of collaborators and I created the website Swoldemort Fitness. It is a simple, concise application that allows users to create accounts and add exercises to the account's routine. This gives users the ability to store their exercises within a routine, in which they can view during workout sessions. Swoldemort was written and developed by four collaborators and utilizes JavaScript, Express.js, Handlebars.js, and MySQL to store, manipulate, and display data. The app follows the MVC paradigm and is deployed using Heroku.",
             "skills": [
-                "", ""
-            ],
-            "methods": "",
+                "Collaborative Work", "Version Control", "Responsive Design", "RESTful APIs", "JavaScript", "Sequelize", "MySQL", "Handlebars", "MVC Paradigm", "Node.js", "Express.js", "Express-session", "bcrypt", "Heroku"
+              ],
+              "methods": "The Swoldemort Fitness application follows the Model-View-Controller (MVC) paradigm. Models are defined for user accounts, exercises, and posts using Sequelize and Connect-session-sequelize. User data is also stored using express-session. This gives the app a welcoming presentation by displaying headings and info for users once logged in to their account. The bcrypt package from Node.js is utilized to ensure that user passwords are protected within the database. The app's views are constructed of Handlebars templates which easily and aesthetically renders data from the database. Server routes stored in the controllers directory are created through the Express.js router. These routes are responsible for rendering pages as well as sending requests to the Swoldemort's API for data manipulation. My main role throughout this project was to create and maintain all routes and models. In addition, I contributed to the creation of client-side JavaScript, as well as securing the connection to the server, and the handlebars html layout and javascript functions.",
             "github": "https://github.com/dong135790/swoldemort",
             "url": "https://application-2023-07-31-69c69ce85b50.herokuapp.com/",
             "image": "/images/swoledemort-screenshot.png"
         },
         {
             "name": "Weather Forecast",
-            "description": "",
-            "skills": [
-                "", ""
-            ],
-            "methods": "",
+            "description": "Weather Dashboard is an interactive, weather forecast application. Users are able to search for a city in the United States and will receive the city's current weather conditions as well as a five-day forecast. Users' previous searches are also stored to local storage so that they appear in a section titled 'Past Searches' upon loading the webpage. The Weather Dashboard is responsive across screen sizes which makes this the perfect app to use while on the go. The website utlizes Bootstrap CSS for a bright and simple UI that follows what users would expect from a weather app. Weather Dashboard utilizes data from the Open Weather Map API to ensure that the correct, updated data is always displayed.",
+            "skills": ["Version Control", "Responsive Design", "JavaScript", "Document Object Model (DOM)", "Bootstrap", "Third-party APIs", "Local Storage"],
+            "methods": "Weather Dashboard utilizes two fetch requests to render data from Open Weather Map API: the Current Weather Data API and the Forecast API. The HTML elements responsible for displaying data from these APIs are generated using JavaScript and the Document Object Model. Local Storage is implemented to store the user's past searches for easier access to search results. The website uses the Bootstrap theme Cerulean for styling and responsiveness.",
             "github": "https://github.com/dong135790/weather-forecast-dashboard",
             "url": "https://dong135790.github.io/weather-forecast-dashboard/",
             "image": "/images/weather-forecast-dashboard.png"
         },
         {
             "name": "E-Commerce Backend",
-            "description": "",
-            "skills": [
-                "", ""
-            ],
-            "methods": "",
+            "description": "This project is the backend for an e-commerce website. By using API testing technologies, such as Insomnia Core, users are able to get, post, update, and delete data from Categories, Products, and Tags models in a MySQL database. This project, while without a user interface, is optimally functional and creates the foundation of a e-commerce site. Implementing models, relationships between models, and API routes efficiently is paramount to any large scale application and is demonstrated through this project using technologies such as Node.js, Express.js, MySQL, and Sequelize.",
+            "skills": ["Version Control", "Revising Starter Code", "MySQL", "Sequelize", "Designing APIs", "Backend Development"],
+            "methods": "The goal of the E-Commerce Backend was to modify and add to starting code in order to make the application fully functional for the project's acceptance criteria. I was tasked with defining data within each model and establishing the relationship between models. These relationships are fundamental to backend applications like this because of how dependent each model is on other models. For example, a category has many products, and a product belongs to many tags. Similarly, a tag belong to many products. The relationship between products and tags is defined through the ProductTag model. This relationship allows for cascading when one item is deleted or edited. Furthermore, I was responsible for creating routes to handle getting, creating, editing, and deleting all models within the database. This project also highlights the usefulness of API testing softwares, such as Insomnia Core, to ensure optimal functionality of API routes before connecting them to a GUI. To see this testing in action, visit the GitHub repository and follow the link in the README.md to the walkthrough video.",
             "github": "https://github.com/dong135790/e-Commerce-back-end",
             "image": "/images/e-commerce-backend-screenshot.png"
         },
         {
             "name": "Professional README.md Generator",
-            "description": "",
-            "skills": [
-                "", ""
-            ],
-            "methods": "",
+            "description": "The Professional README.md Generator is a fun, helpful project that minimizes the work required to create a professional READEM.md file. The project functions fully through the command line by running a prompt sequence derived from the Node.js package Inquirer. After running the application and answering all the given prompts, the application then renders a fully formatted README.md file using the input data to an output folder in the project's directory. That way, users can easily add information to a README document in markdown format by simply entering the desired fields into the terminal. The project even allows users to choose a license for the project and renders a corresponding license badge. The goal of this project is to streamline and render a professionally formatted README.md that users may implement in their GitHub repositories.",
+            "skills": ["JavaScript", "Node.js", "Inquirer", "Template Literals", "Node:fs"],
+            "methods": "I began this project by first creating a template markdown file that the output of the program should mimic. By using this as a reference, I was able to fill the Inquirer prompt with an array of question objects pertaining to each section of the README.md. Then I created a js file responsible for rendering the markdown file as well as optional links/badges corresponding to the data from the prompt system. Once the prompt questions have been completed, the data from the prompt system is inserted into a template literal. The template literal also invokes functions for properly rendering a license badge, a link to the license's webpage, and a navigation link to the license section. This is important because some projects will not contain licenses and adding this functionality prevents unneccessary/empty links from rendering in the README.md. To see the Professional README.md Generator in action, visit the GitHub repository and follow the link to the walk through video in the project's README.",
             "github": "https://github.com/dong135790/readme-generator",
             "image": "/images/readme-generator-screenshot.png"
         }
