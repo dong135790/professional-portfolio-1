@@ -1,9 +1,9 @@
 <main>
     {{>navigation}}
     {{! Header Section }}
-    <div class="min-w-full flex flex-col items-center overflow-hidden py-16 sm:py-20 h-auto">
+    <div class="min-w-full flex flex-col items-center overflow-hidden py-16 sm:py-20 h-auto ">
         <div class="lg:container mx-4 lg:mx-auto max-w-auto lg:max-w-[70%] text-gray-200">
-            <div class="mx-2 lg:mx-0 md:mt-16 px-8 py-16 lg:px-16 lg:py-24 bg-gray-800 rounded-lg">
+            <div class="mx-2 lg:mx-0 md:mt-16 px-8 py-16 lg:px-16 lg:py-24 bg-gray-800 rounded-lg pb-24">
                 <div class="mx-auto max-w-auto lg:mx-0">
                     <h2 class="mb-12 text-4xl font-main-bold sm:text-6xl">Justin Dong</h2>
                     <h3 id="typewriter" class="my-8 lg:my-12 text-xl font-main-semi sm:text-4xl">Full Stack Web
@@ -26,80 +26,80 @@
             </div>
             {{!Projects section}}
             <div id="recent-projects"
-                class="mx-2 mb-32 md:mb-48 lg:mx-0 px-8 py-16 lg:px-16 lg:py-24 rounded-lg bg-gray-800">
+                class="mx-2 mb-32 md:mb-48 lg:mx-0 px-8 py-16 lg:px-16 lg:py-24 rounded-lg bg-gray-800 project-center">
                 <h3 class="font-main-semi text-2xl sm:text-5xl mb-16 text-gray-200">Recent Projects</h3>
-                <div class="grid grid-flow-row grid-cols-6 gap-8">
+                <div class="individual-project-center">
                     {{!-- astronoME --}}
                     <div
-                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
-                        <img class="w-full object-cover object-top h-64" src="/images/astronome-screenshot.png"
+                        class="flex flex-row rounded shadow-lg text-gray-200 p-6 pb-24 relative individual-project-start">
+                        <img class="w-full object-cover object-top" src="/images/astronome-screenshot.png"
                             alt="AstronoME">
-                        <div class="px-6 py-4 flex flex-col items-center text-center">
-                            <h4 class="font-main-bold text-xl mb-2">AstronoME</h4>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                        <div class="px-6 py-4 flex flex-col items-center text-center bg-whites justify-center rounded-lg absolute-right">
+                            <h4 class="font-main-bold text-xl mb-2 text-black min-text">AstronoME</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 href="/projects/0">Case
                                 Study <span aria-hidden="true">&rarr;</span></a>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 target="_blank" href="https://github.com/cdgonzo23/astronoME">GitHub Repository <span
                                     aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div>
                     {{!-- Swoldemort --}}
                     <div
-                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
-                        <img class="w-full object-cover object-top h-64" src="/images/swoledemort-screenshot.png"
-                            alt="Swoldemort Fitness">
-                        <div class="px-6 py-4 flex flex-col items-center text-center">
-                            <h4 class="font-main-bold text-xl mb-2">Swoldemort Fitness</h4>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                        class="flex flex-row rounded  shadow-lg text-gray-200 p-6 pb-24 relative individual-project-end">
+                        <div class="px-6 py-4 flex flex-col items-center text-center bg-whites justify-center rounded-lg absolute-left">
+                            <h4 class="font-main-bold text-xl mb-2 text-black min-text">Swoldemort Fitness</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 href="/projects/1">Case
                                 Study <span aria-hidden="true">&rarr;</span></a>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 target="_blank" href="https://github.com/dong135790/swoldemort">GitHub Repository <span
                                     aria-hidden="true">&rarr;</span></a>
                         </div>
+                        <img class="w-full object-cover object-top h-64" src="/images/swoledemort-screenshot.png"
+                            alt="Swoldemort Fitness">
                     </div>
                     {{!-- Weather Forecast --}}
                     <div
-                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
-                        <img class="w-full object-cover object-top max-h-64"
+                        class="flex flex-row rounded shadow-lg text-gray-200 p-6 pb-24 relative individual-project-start">
+                        <img class="w-full object-cover object-top"
                             src="/images/weather-forecast-dashboard.png" alt="Weather Forecast">
-                        <div class="px-6 py-4 flex flex-col items-center text-center">
-                            <h4 class="font-main-bold text-xl mb-2">Weather Forecast</h4>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                        <div class="px-6 py-4 flex flex-col items-center text-center bg-whites justify-center rounded-lg absolute-right">
+                            <h4 class="font-main-bold text-xl mb-2 text-black min-text">Weather Forecast</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 href="/projects/2">Case
                                 Study <span aria-hidden="true">&rarr;</span></a>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 target="_blank" href="https://github.com/dong135790/weather-forecast-dashboard">GitHub
                                 Repository <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div>
                     {{!-- E-Commerce Backend --}}
                     <div
-                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
-                        <img class="w-full object-cover object-top max-h-64"
-                            src="/images/e-commerce-backend-screenshot.png" alt="E-commerce Backend">
-                        <div class="px-6 py-4 flex flex-col items-center text-center">
-                            <h4 class="font-main-bold text-xl mb-2">E-Commerce Backend</h4>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                        class="flex flex-row rounded shadow-lg text-gray-200 p-6 pb-24 relative individual-project-end">
+                        <div class="px-6 py-4 flex flex-col items-center text-center bg-whites justify-center rounded-lg absolute-left">
+                            <h4 class="font-main-bold text-xl mb-2 text-black min-text">E-Commerce Backend</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 href="/projects/3">Case
                                 Study <span aria-hidden="true">&rarr;</span></a>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 target="_blank" href="https://github.com/dong135790/e-Commerce-back-end">GitHub
                                 Repository <span aria-hidden="true">&rarr;</span></a>
                         </div>
+                        <img class="w-full object-cover object-top max-h-64"
+                            src="/images/e-commerce-backend-screenshot.png" alt="E-commerce Backend">
                     </div>
                     {{!-- Readme generator--}}
                     <div
-                        class="col-span-6 md:col-span-3 lg:col-span-2 rounded overflow-hidden shadow-lg bg-gray-700 text-gray-200">
+                        class="flex flex-row rounded shadow-lg text-gray-200 p-6 relative individual-project-start">
                         <img class="w-full object-cover object-top h-64" src="/images/readme-generator-screenshot.png"
                             alt="README.md Generator">
-                        <div class="px-6 py-4 flex flex-col items-center text-center">
-                            <h4 class="font-main-bold text-xl mb-2">README.md Generator</h4>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                        <div class="px-6 py-4 flex flex-col items-center text-center bg-whites justify-center rounded-lg absolute-right">
+                            <h4 class="font-main-bold text-xl mb-2 text-black min-text">README.md Generator</h4>
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 href="/projects/4">Case
                                 Study <span aria-hidden="true">&rarr;</span></a>
-                            <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 "
+                            <a class="transform duration-300 hover:scale-110 text-[#0e62cf] hover:text-gray-200 "
                                 target="_blank" href="https://github.com/dong135790/readme-generator">GitHub Repository
                                 <span aria-hidden="true">&rarr;</span></a>
                         </div>
@@ -159,7 +159,7 @@
                             <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full" src="/images/icons/phone.png"
                                 alt="phone icon">
                             <div>
-                                <a class="text-[#83E2FB] hover:text-gray-200" href="tel:865-850-5283">(606)401-8473</a>
+                                <a class="text-[#0e62cf] hover:text-gray-200" href="tel:865-850-5283">(606)401-8473</a>
                             </div>
                         </div>
                     </li>
@@ -168,7 +168,7 @@
                             <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full" src="/images/icons/email.png"
                                 alt="email icon">
                             <div>
-                                <a class="text-[#83E2FB] hover:text-gray-200"
+                                <a class="text-[#0e62cf] hover:text-gray-200"
                                     href="mailto: dong135790@gmail.com">dong135790@gmail.com</a>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                             <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full" src="/images/icons/linkedin.png"
                                 alt="linkedin icon">
                             <div>
-                                <a class="text-[#83E2FB] hover:text-gray-200" target="_blank"
+                                <a class="text-[#0e62cf] hover:text-gray-200" target="_blank"
                                     href="https://www.linkedin.com/in/justin-dong-662a46205/">LinkedIn</a>
                             </div>
                         </div>
@@ -188,7 +188,7 @@
                             <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full bg-gray-200"
                                 src="/images/icons/github-mark.png" alt="github icon">
                             <div>
-                                <a class="text-[#83E2FB] hover:text-gray-200" target="_blank"
+                                <a class="text-[#0e62cf] hover:text-gray-200" target="_blank"
                                     href="https://github.com/dong135790">GitHub</a>
                             </div>
                         </div>
